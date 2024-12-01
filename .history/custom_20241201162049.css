@@ -1,0 +1,37 @@
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top>.tab-border-top-container, .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.selected.tab-border-top>.tab-border-top-container {
+    background-color: #28cd72;
+    height: 5px;
+    top: 0;
+    z-index: 6;
+    background-image: linear-gradient(to right, #64d564ba, #c7da59, #f75f5f, #ec63c9,#64d564ba);
+    background-size: 200% auto;
+    animation: borderTopActive 4s linear infinite ;
+    transition: ease-in-out 3ms;
+}
+
+@keyframes borderTopActive {
+    to{
+        background-position:200%;
+    }
+    from{
+        background-position:0%;
+    }
+}
+
+.monaco-workbench .part.statusbar>.items-container>.statusbar-item.remote-kind {
+    background-color: var(--vscode-statusBarItem-remoteBackground);
+    color: var(--vscode-statusBarItem-remoteForeground);
+    background-image: linear-gradient(to left, #64d564ba, #c7da59, #f75f5f, #ec63c9,#64d564ba);
+    animation: statusBarBtn 4s infinite round;
+    transition: ease-in-out 3ms;
+    background-size:100% auto;
+}
+@keyframes statusBarBtn {
+    to{
+        /* background-image: linear-gradient(to left, #64d564ba, #c7da59, #f75f5f, #ec63c9,#64d564ba); */
+        background-position:100%;
+    }
+    from{
+        background-position:0%;
+    }
+}
